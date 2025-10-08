@@ -1,8 +1,8 @@
-from AviaxMusic.core.bot import Aviax
-from AviaxMusic.core.dir import dirr
-from AviaxMusic.core.git import git
-from AviaxMusic.core.userbot import Userbot
-from AviaxMusic.misc import dbb, heroku
+from NapsterMusic.core.bot import Napster
+from NapsterMusic.core.dir import dirr
+from NapsterMusic.core.git import git
+from NapsterMusic.core.userbot import Userbot
+from NapsterMusic.misc import dbb, heroku
 
 from .logging import LOGGER
 
@@ -11,7 +11,7 @@ git()
 dbb()
 heroku()
 
-app = Aviax()
+app = Napster()
 userbot = Userbot()
 
 
@@ -24,3 +24,4 @@ Spotify = SpotifyAPI()
 Resso = RessoAPI()
 Telegram = TeleAPI()
 YouTube = YouTubeAPI()
+
