@@ -2,8 +2,8 @@ import time
 
 import psutil
 
-from AviaxMusic.misc import _boot_
-from AviaxMusic.utils.formatters import get_readable_time
+from NapsterMusic.misc import _boot_
+from NapsterMusic.utils.formatters import get_readable_time
 
 
 async def bot_sys_stats():
@@ -13,3 +13,4 @@ async def bot_sys_stats():
     RAM = f"{psutil.virtual_memory().percent}%"
     DISK = f"{psutil.disk_usage('/').percent}%"
     return UP, CPU, RAM, DISK
+
