@@ -1,5 +1,5 @@
-from AviaxMusic import app
-from AviaxMusic.utils.database import get_cmode
+from NapsterMusic import app
+from NapsterMusic.utils.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):
@@ -21,3 +21,4 @@ async def get_channeplayCB(_, command, CallbackQuery):
         chat_id = CallbackQuery.message.chat.id
         channel = None
     return chat_id, channel
+
